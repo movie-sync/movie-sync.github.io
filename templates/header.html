@@ -1,0 +1,15 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/home">Movie Sync</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ng-href="#/home" ng-if="userIsLoggedIn()" ng-click="userLogout()">Log out</a></li>
+                <li><a ng-href="#/login" ng-if="!userIsLoggedIn()">Login</a></li>
+                <li><a ng-href="#/register" ng-if="!userIsLoggedIn()">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
